@@ -3,7 +3,7 @@
 }
 
 #sun{
-    fill: #ffff00;
+    /*background-image: url("http://bestanimations.com/Earth&Space/Sun/sun-eclipsed-animation-4.gif")*/
 }
 
 .path{
@@ -23,30 +23,85 @@
     stroke-width: 2;
 }
 
-#planet1{
-    fill: #3333ff;
+.planet{
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+#planet1{
+    animation-name: orbit1;
+    animation-duration: 30s;
+}
+
+@keyframes orbit1 {
+    from { transform: rotate(0deg) translateY(-380px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(-380px) rotate(-360deg); }
+}
+
 #planet2{
     fill: #46d3ef;
+    animation-name: orbit2;
+    animation-duration: 15s;
 }
+@keyframes orbit2 {
+    from { transform: rotate(0deg) translateY(-350px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(-350px) rotate(-360deg); }
+}
+
 #planet3{
-    fill: #ffe944;
+    animation-name: orbit3;
+    animation-duration: 10s;
+}
+@keyframes orbit3 {
+    from { transform: rotate(0deg) translateY(-260px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(-260px) rotate(-360deg); }
 }
 #planet4{
     fill: #ffd396;
+    animation-name: orbit4;
+    animation-duration: 6s;
+}
+@keyframes orbit4 {
+    from { transform: rotate(0deg) translateY(-180px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(-180px) rotate(-360deg); }
 }
 #planet5{
     fill: #ff9933;
+    animation-name: orbit5;
+    animation-duration: 3s;
+}
+@keyframes orbit5 {
+    from { transform: rotate(0deg) translateY(-140px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(-140px) rotate(-360deg); }
 }
 #planet6{
-    fill: #3dff31;
+    fill: #2eb425;
+    animation-name: orbit6;
+    animation-duration: 2s;
+}
+@keyframes orbit6 {
+    from { transform: rotate(0deg) translateY(-90px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(-90px) rotate(-360deg); }
 }
 #planet7{
     fill: #ff5f3a;
+    animation-name: orbit7;
+    animation-duration: 1.5s;
+}
+@keyframes orbit7 {
+    from { transform: rotate(0deg) translateY(-70px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(-70px) rotate(-360deg); }
 }
 #planet8{
     fill: #d9d9d9;
+    animation-name: orbit8;
+    animation-duration: 1s;
+}
+@keyframes orbit8 {
+    from { transform: rotate(0deg) translateY(-60px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateY(-60px) rotate(-360deg); }
 }
 #moon{
     fill:#ffffff;
 }
+

@@ -10,42 +10,59 @@
 </head>
 <body>
     <svg width="800" height="800" class="outerSpace">
-        <circle cx="400" cy="400" r="40" id="sun"/>
+        <defs>
+            <radialGradient id="sun" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="60%" style="stop-color:rgb(255,159,16);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </radialGradient>
+            <linearGradient id="jupiter" x1="0%" y1="25%" x2="25%" y2="100%">
+                <stop offset="0%" style="stop-color:rgb(255,211,150);stop-opacity:1" />
+                <stop offset="25%" style="stop-color:rgb(255,129,92);stop-opacity:1" />
+                <stop offset="50%" style="stop-color:rgb(255,251,238);stop-opacity:1" />
+                <stop offset="75%" style="stop-color:rgb(255,129,92);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,211,150);stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="neptune" x1="0%" y1="50%" x2="50%" y2="100%">
+                <stop offset="0%" style="stop-color:#3333ff;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#222293;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#3333ff;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <circle cx="400" cy="400" r="40" fill="url(#sun)"/>
 
         <circle cx="400" cy="400" r="60" class="path inner"/>
-        <circle cx="400" cy="340" r="3" class="planet" id="planet8"/>
+        <circle cx="400" cy="400" r="3" class="planet" id="planet8"/>
 
 
         <circle cx="400" cy="400" r="70" class="path inner"/>
-        <circle cx="400" cy="330" r="4" class="planet" id="planet7"/>
+        <circle cx="400" cy="400" r="4" class="planet" id="planet7"/>
 
 
         <circle cx="400" cy="400" r="90" class="path inner"/>
-        <circle cx="400" cy="310" r="8" class="planet" id="planet6"/>
-        <circle cx="400" cy="310" r="12" class="path inner"/>
-        <circle cx="400" cy="322" r="2" class="planet" id="moon"/>
+        <circle cx="400" cy="400" r="8" class="planet" id="planet6"/>
+        <!--<circle cx="400" cy="310" r="12" class="path inner"/>-->
+        <!--<circle cx="400" cy="322" r="2" class="planet" id="moon"/>-->
 
 
         <circle cx="400" cy="400" r="140" class="path mid"/>
-        <circle cx="400" cy="260" r="12" class="planet" id="planet5"/>
+        <circle cx="400" cy="400" r="12" class="planet" id="planet5"/>
 
 
         <circle cx="400" cy="400" r="180" class="path mid"/>
-        <circle cx="400" cy="220" r="25" class="planet" id="planet4"/>
+        <circle cx="400" cy="400" r="25" class="planet" id="planet4"/>
 
 
         <circle cx="400" cy="400" r="260" class="path outer"/>
-        <circle cx="400" cy="140" r="30" class="planet" id="planet3"/>
+        <circle cx="400" cy="400" r="30" class="planet" id="planet3" fill="url(#jupiter)"/>
 
 
         <circle cx="400" cy="400" r="350" class="path outer"/>
-        <circle cx="400" cy="50" r="10" class="planet" id="planet2"/>
+        <circle cx="400" cy="400" r="10" class="planet" id="planet2"/>
 
 
         <circle cx="400" cy="400" r="380" class="path outer"/>
-        <circle cx="400" cy="20" r="15" class="planet" id="planet1"/>
-
-
+        <circle cx="400" cy="400" r="15" class="planet" id="planet1" fill="url(#neptune)"/>
     </svg>
 </body>
 </html>
