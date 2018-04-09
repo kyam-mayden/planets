@@ -1,3 +1,7 @@
+svg{
+    position: absolute;
+}
+
 .outerSpace {
     background-color: #000000;
 }
@@ -52,6 +56,16 @@
     animation-name: orbit3;
     animation-duration: 10s;
 }
+
+#moon{
+    animation-name: orbit3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left:360px;
+    top: 360px;
+}
+
 @keyframes orbit3 {
     from { transform: rotate(0deg) translateY(-260px) rotate(0deg); }
     to   { transform: rotate(360deg) translateY(-260px) rotate(-360deg); }
@@ -79,6 +93,7 @@
     animation-name: orbit6;
     animation-duration: 2s;
 }
+
 @keyframes orbit6 {
     from { transform: rotate(0deg) translateY(-90px) rotate(0deg); }
     to   { transform: rotate(360deg) translateY(-90px) rotate(-360deg); }
@@ -101,7 +116,5 @@
     from { transform: rotate(0deg) translateY(-60px) rotate(0deg); }
     to   { transform: rotate(360deg) translateY(-60px) rotate(-360deg); }
 }
-#moon{
-    fill:#ffffff;
-}
+
 
