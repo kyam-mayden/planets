@@ -1,0 +1,52 @@
+.outerSpace {
+    background-color: #000000;
+}
+
+#sun{
+    fill: #ffff00;
+}
+
+.path{
+    stroke: #ffffff;
+    fill: none;
+}
+
+.inner{
+    stroke-width: 0.3;
+}
+
+.mid{
+    stroke-width: 0.8;
+}
+
+.outer{
+    stroke-width: 2;
+}
+
+#planet1{
+    fill: #3333ff;
+}
+#planet2{
+    fill: #46d3ef;
+}
+#planet3{
+    fill: #ffe944;
+}
+#planet4{
+    fill: #ffd396;
+}
+#planet5{
+    fill: #ff9933;
+}
+#planet6{
+    fill: #3dff31;
+}
+#planet7{
+    fill: #ff5f3a;
+}
+#planet8{
+    fill: #d9d9d9;
+}
+#moon{
+    fill:#ffffff;
+}
